@@ -14,8 +14,28 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index',[
+        "pagetitle" => "Home",
+    "maintitle" => "",
+    "ActiveMain"=> "active ",
+    "ActiveMaintext"=>" bg-secondary rounded text-white"
+    ]);
 });
+Route::view('/tentangkita', 'tentangkita',[
+    "pagetitle" => "About",
+    "maintitle" => "About My Library",
+    "ActiveAbout"=> "active ",
+    "ActiveAbouttext"=>"  bg-secondary rounded text-white"
+]
+);
+Route::view('/help', 'help',[
+    "pagetitle" => "About",
+    "maintitle" => "About My Library",
+    "ActiveContact"=> "active",
+    "Activecontacttext"=>" bg-secondary rounded text-white"
+]
+);
+
 
 Route::middleware([
     'auth:sanctum',
