@@ -36,11 +36,9 @@
             </a>
         </div>
     </nav>
-    <div class="container mt-5">
-        <h1>{{$maintitle}}</h1>
-        <h2>@yield('layout_tagline')</h2>
+
         @yield('layout_content')
-    </div>
+
 
     <!-- Bootstrap JavaScript (required for the dropdown menu) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
