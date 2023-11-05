@@ -16,15 +16,19 @@
             </button>
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav">
-                    <li class="nav-item {{$ActiveMain ?? ''}} mx-auto p-2">
+
+                    <li class="nav-item {{$ActiveMain ?? ''}} mx-auto px-4 py-2">
                         <a class="nav-link {{$ActiveMaintext ?? ''}}" aria-current="page" href="/">Home</a>
                     </li>
-                    <li class="nav-item {{ $ActiveAbout ?? ''}} mx-auto p-2 ">
+
+                    <li class="nav-item {{ $ActiveAbout ?? ''}} mx-auto px-4  py-2 ">
                         <a class="nav-link {{$ActiveAbouttext ?? ''}}" href="/tentangkita">About us</a>
                     </li>
-                    <li class="nav-item {{ $ActiveContact ?? ''}} mx-auto p-2 ">
+
+                    <li class="nav-item {{ $ActiveContact ?? ''}} mx-auto px-4  py-2">
                         <a class="nav-link {{$Activecontacttext ?? ''}}" href="/help">Help</a>
                     </li>
+
                 </ul>
             </div>
             <a href="/whatever">
