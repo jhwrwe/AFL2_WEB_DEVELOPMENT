@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Schools extends Model
 {
+    use HasFactory;
     protected $fillable = ['id', 'name', 'courses', 'criteria', 'aboutcourse'];
 
     public static function index()
