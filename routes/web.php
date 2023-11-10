@@ -1,7 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Models\Schools;
+use App\Models\Teachers;
+use App\Http\Controllers\SchoolsController;
+use App\Http\Controllers\TeachersController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -28,6 +31,10 @@ Route::view('/tentangkita', 'tentangkita',[
     "ActiveAbouttext"=>"  bg-secondary rounded text-white"
 ]
 );
+Route::get('/schoolseeing',[SchoolsController::class,'index']);
+Route::get('/schoolseeing/{id}', [SchoolsController::class,'bruh']);
+Route::get('/ViewTeacher',[TeachersController::class,'index']);
+Route::get('/ViewTeacher/{id}', [TeachersController::class,'bruh']);
 Route::view('/help', 'help',[
     "pagetitle" => "About",
     "maintitle" => "About My Library",

@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Teacher;
-use App\Http\Requests\StoreTeacherRequest;
-use App\Http\Requests\UpdateTeacherRequest;
+use App\Models\Apply;
+use App\Http\Requests\StoreApplyRequest;
+use App\Http\Requests\UpdateApplyRequest;
 
-class TeacherController extends Controller
+class ApplyController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -27,7 +27,7 @@ class TeacherController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreTeacherRequest $request)
+    public function store(StoreApplyRequest $request)
     {
         //
     }
@@ -35,7 +35,7 @@ class TeacherController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Teacher $teacher)
+    public function show(Apply $apply)
     {
         //
     }
@@ -43,7 +43,7 @@ class TeacherController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Teacher $teacher)
+    public function edit(Apply $apply)
     {
         //
     }
@@ -51,7 +51,7 @@ class TeacherController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdateTeacherRequest $request, Teacher $teacher)
+    public function update(UpdateApplyRequest $request, Apply $apply)
     {
         //
     }
@@ -59,7 +59,7 @@ class TeacherController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Teacher $teacher)
+    public function destroy(Apply $apply)
     {
         //
     }

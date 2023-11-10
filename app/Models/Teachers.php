@@ -5,10 +5,12 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Teacher extends Model
+class Teachers extends Model
 {
-    protected $fillable = ['id', 'name', 'majors', 'CV', 'Hobys', 'age', 'gender', 'addition'];
 
+    use HasFactory;
+
+    protected $fillable = ['name','majors','work_experience','attended','skills','email','password','username','nationality','gender','Additional_information','Hobbys','age','image'];
     public static function index()
     {
         return self::all();

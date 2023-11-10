@@ -14,6 +14,11 @@ return new class extends Migration
         Schema::create('schools', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->String('name');
+            $table-> String('course');
+            $table-> text('criteria');
+            $table->text('aboutcourse')->nullable();
+            $table->text('image')->nullable();
         });
     }
 

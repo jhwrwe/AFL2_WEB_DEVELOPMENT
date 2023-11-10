@@ -27,8 +27,8 @@
 </head>
 <body>
     <div class="container-fluid py-5 bg-image text-white text-center">
-        <h1 class="mb-4">About Us</h1>
-        <p class="lead">Creating Connections, Empowering Educators</p>
+        <h1 class="mb-4 text-black">About Us</h1>
+        <p class="lead text-black">Creating Connections, Empowering Educators</p>
     </div>
     <div class="container-fluid py-5">
         <div class="row">

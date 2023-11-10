@@ -2,22 +2,23 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Schools;
-use App\Http\Requests\StoreSchoolsRequest;
-use App\Http\Requests\UpdateSchoolsRequest;
+use App\Models\Teachers;
+use App\Http\Requests\StoreTeachersRequest;
+use App\Http\Requests\UpdateTeachersRequest;
 
-class SchoolsController extends Controller
+class TeachersController extends Controller
 {
     public function index(){
-        return view('schoolseeing',[
+        return view('ViewTeacher',[
             "pagetitle" => "projek",
         "maintitle" => "projek data",
-        'projects' => Schools::all(),
+        'projects' => Teachers::all(),
         "ActiveProjek"=> "active"
         ]);
     }
+
     public function bruh($id){
-        $project = Schools::find($id);
+        $project = Teachers::find($id);
             return view('show',[
                 'pagetitle' => 'project',
                 'maintitle' => 'project Data',

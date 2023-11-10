@@ -8,7 +8,7 @@
 
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Navbar</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -18,15 +18,21 @@
                 <ul class="navbar-nav">
 
                     <li class="nav-item {{$ActiveMain ?? ''}} mx-auto px-4 py-2">
-                        <a class="nav-link {{$ActiveMaintext ?? ''}}" aria-current="page" href="/">Home</a>
+                        <a class="nav-link {{$ActiveMaintext ?? ''}} py-2 d-none d-md-inline-block" aria-current="page" href="/">Home</a>
                     </li>
 
                     <li class="nav-item {{ $ActiveAbout ?? ''}} mx-auto px-4  py-2 ">
-                        <a class="nav-link {{$ActiveAbouttext ?? ''}}" href="/tentangkita">About us</a>
+                        <a class="nav-link {{$ActiveAbouttext ?? ''}} py-2 d-none d-md-inline-block" href="/tentangkita">About us</a>
                     </li>
 
                     <li class="nav-item {{ $ActiveContact ?? ''}} mx-auto px-4  py-2">
-                        <a class="nav-link {{$Activecontacttext ?? ''}}" href="/help">Help</a>
+                        <a class="nav-link {{$Activecontacttext ?? ''}} py-2 d-none d-md-inline-block" href="/help">Help</a>
+                    </li>
+                    <li class="nav-item {{ $ActiveContact ?? ''}} mx-auto px-4  py-2">
+                        <a class="nav-link {{$Activecontacttext ?? ''}} py-2 d-none d-md-inline-block" href="/schoolseeing">See school</a>
+                    </li>
+                    <li class="nav-item {{ $ActiveContact ?? ''}} mx-auto px-4  py-2">
+                        <a class="nav-link {{$Activecontacttext ?? ''}} py-2 d-none d-md-inline-block" href="/ViewTeacher">See school</a>
                     </li>
 
                 </ul>
@@ -38,6 +44,8 @@
     </nav>
 
         @yield('layout_content')
+
+
 
 
     <!-- Bootstrap JavaScript (required for the dropdown menu) -->
