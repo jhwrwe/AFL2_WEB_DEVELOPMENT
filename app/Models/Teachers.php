@@ -20,4 +20,8 @@ class Teachers extends Model
     {
         return self::find($id);
     }
+    public function applies()
+    {
+        return $this->belongsToMany(Apply::class, 'apply_teacher', 'id_teacher', 'id_apply');
+    }
 }

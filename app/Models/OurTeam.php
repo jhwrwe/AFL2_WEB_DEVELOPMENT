@@ -5,10 +5,10 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Schools extends Model
+class OurTeam extends Model
 {
     use HasFactory;
-    protected $fillable = ['name', 'courses', 'criteria', 'aboutcourse','image'];
+    protected $fillable = ['name', 'title', 'date', 'major','image','description'];
 
     public static function index()
     {
@@ -18,9 +18,5 @@ class Schools extends Model
     public static function showschools($id)
     {
         return self::find($id);
-    }
-    public function applies()
-    {
-        return $this->belongsToMany(Apply::class, 'apply_school', 'id_school', 'id_apply');
     }
 }
