@@ -1,82 +1,98 @@
-
 @extends('layouts.template')
 @section('layout_content')
 
+<style>
+    .outline-container {
+        border: 2px solid black;
+        border-radius: 0.5rem;
+    }
 
+    .section-title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-top: 1rem;
+    }
 
-<div class="bg-white p-6 mx-auto max-w-3xl rounded-md shadow-lg">
+    .info-label {
+        font-weight: bold;
+    }
+
+    .info-value {
+        margin-left: 0.5rem;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .info-block {
+        padding: 0.5rem;
+        border: 1px solid #ddd;
+        border-radius: 0.25rem;
+    }
+</style>
+
+<br>
+<br>
+<br>
+<br>
+
+<div class="bg-white p-6 mx-auto max-w-3xl rounded-md shadow-lg outline-container">
     <h1 class="text-3xl font-bold text-center mb-6">{{ $project['name'] }}</h1>
 
-    <div class="my-6">
-        <h2 class="text-2xl font-bold">Personal Information</h2>
-        <div class="grid grid-cols-2 gap-4">
-            <div>
-                <span class="text-gray-600">Age:</span>
-                {{ $project['age'] }}
-            </div>
-            <div>
-                <span class="text-gray-600">Email:</span>
-                {{ $project['email'] }}
-            </div>
-            <div>
-                <span class="text-gray-600">Username:</span>
-                {{ $project['username'] }}
-            </div>
-            <div>
-                <span class="text-gray-600">Nationality:</span>
-                {{ $project['nationality'] }}
-            </div>
-            <div>
-                <span class="text-gray-600">Gender:</span>
-                {{ $project['gender'] }}
-            </div>
-            <div>
-                <span class="text-gray-600">Phone:</span>
-                {{ $project['phone'] }}
-            </div>
+    <div class="info-block">
+        <h2 class="section-title">Personal Information</h2>
+        <div class="grid-container">
+            <div class="info-label">Age:</div>
+            <div class="info-value">{{ $project['age'] }}</div>
+            <div class="info-label">Email:</div>
+            <div class="info-value">{{ $project['email'] }}</div>
+            <div class="info-label">Username:</div>
+            <div class="info-value">{{ $project['username'] }}</div>
+            <div class="info-label">Nationality:</div>
+            <div class="info-value">{{ $project['nationality'] }}</div>
+            <div class="info-label">Gender:</div>
+            <div class="info-value">{{ $project['gender'] }}</div>
+            <div class="info-label">Phone:</div>
+            <div class="info-value">{{ $project['phone'] }}</div>
         </div>
     </div>
 
-    <div class="my-6">
-        <h2 class="text-2xl font-bold">Education</h2>
-        <div class="grid grid-cols-2 gap-4">
-            <div>
-                <span class="text-gray-600">Majors:</span>
-                {{ $project['majors'] }}
-            </div>
-            <div>
-                <span class="text-gray-600">Attended:</span>
-                {{ $project['attended'] }}
-            </div>
+    <div class="info-block">
+        <h2 class="section-title">Education</h2>
+        <div class="grid-container">
+            <div class="info-label">Majors:</div>
+            <div class="info-value">{{ $project['majors'] }}</div>
+            <div class="info-label">Attended:</div>
+            <div class="info-value">{{ $project['attended'] }}</div>
         </div>
     </div>
 
-    <div class="my-6">
-        <h2 class="text-2xl font-bold">Work Experience</h2>
+    <div class="info-block">
+        <h2 class="section-title">Work Experience</h2>
         <p>{{ $project['work_experience'] }}</p>
     </div>
 
-    <div class="my-6">
-        <h2 class="text-2xl font-bold">Skills</h2>
+    <div class="info-block">
+        <h2 class="section-title">Skills</h2>
         <p>{{ $project['skills'] }}</p>
     </div>
 
-    <div class="my-6">
-        <h2 class="text-2xl font-bold">Additional Information</h2>
-        <div class="grid grid-cols-2 gap-4">
-            <div>
-                <span class="text-gray-600">Description:</span>
-                {{ $project['description'] }}
-            </div>
-            <div>
-                <span class="text-gray-600">Hobbies:</span>
-                {{ $project['Hobbys'] }}
-            </div>
-            <div class="col-span-2">
-                <span class="text-gray-600">About:</span>
-                {{ $project['about'] }}
-            </div>
+    <div class="info-block">
+        <h2 class="section-title">Additional Information</h2>
+        <div class="grid-container">
+            <div class="info-label">Description:</div>
+            <div class="info-value">{{ $project['description'] }}</div>
+            <div class="info-label">Hobbies:</div>
+            <div class="info-value">{{ $project['Hobbys'] }}</div>
+            <div class="info-label">About:</div>
+            <div class="info-value">{{ $project['about'] }}</div>
         </div>
     </div>
 </div>
+
+<br>
+<br>
 @endsection
