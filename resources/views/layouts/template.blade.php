@@ -63,13 +63,13 @@
                         <a class="nav-link {{$Activecontacttext ?? ''}} py-2 d-none d-md-inline-block" href="/help">Help</a>
                     </li>
                     <li class="nav-item {{ $ActiveContact ?? ''}} mx-auto px-4  py-2">
-                        <a class="nav-link {{$Activecontacttext ?? ''}} py-2 d-none d-md-inline-block" href="/schoolseeing">See school</a>
+                        <a class="nav-link {{$Activecontacttext ?? ''}} py-2 d-none d-md-inline-block" href="/view_schools">view school</a>
                     </li>
                     <li class="nav-item {{ $ActiveContact ?? ''}} mx-auto px-4  py-2">
-                        <a class="nav-link {{$Activecontacttext ?? ''}} py-2 d-none d-md-inline-block" href="/ViewTeacher">See school</a>
+                        <a class="nav-link {{$Activecontacttext ?? ''}} py-2 d-none d-md-inline-block" href="/view_teacher">view teacher</a>
                     </li>
                     <li class="nav-item {{ $ActiveContact ?? ''}} mx-auto px-4  py-2">
-                        <a class="nav-link {{$Activecontacttext ?? ''}} py-2 d-none d-md-inline-block" href="/view_apply">See school</a>
+                        <a class="nav-link {{$Activecontacttext ?? ''}} py-2 d-none d-md-inline-block" href="/view_apply">view application</a>
                     </li>
                 </ul>
             </div>

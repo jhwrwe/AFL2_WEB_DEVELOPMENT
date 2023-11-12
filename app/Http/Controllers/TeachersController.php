@@ -9,7 +9,7 @@ use App\Http\Requests\UpdateTeachersRequest;
 class TeachersController extends Controller
 {
     public function index(){
-        return view('ViewTeacher',[
+        return view('view_teacher',[
             "pagetitle" => "projek",
         "maintitle" => "projek data",
         'projects' => Teachers::all(),
@@ -17,13 +17,20 @@ class TeachersController extends Controller
         ]);
     }
 
-    public function bruh($id){
+    public function Show_Teachers_info($id){
         $project = Teachers::find($id);
-            return view('show',[
+            return view('teacher_info',[
                 'pagetitle' => 'project',
                 'maintitle' => 'project Data',
                 'project'=> $project,
             ]);
-
-}
+        }
+        public function Show_teachers_cv($id){
+            $project = Teachers::find($id);
+                return view('Teachers_CV',[
+                    'pagetitle' => 'project',
+                    'maintitle' => 'project Data',
+                    'project'=> $project,
+                ]);
+            }
 }

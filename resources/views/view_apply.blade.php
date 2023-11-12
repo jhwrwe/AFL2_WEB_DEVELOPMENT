@@ -18,18 +18,23 @@
 @foreach($applies as $apply)
 
 <tr>
-    <p>Applied at Schools:
-        @foreach($apply->schools as $school)
-            {{ $school->name }},
-        @endforeach
-    </p>
-    <p>Applied with Teachers:
-        @foreach($apply->teachers as $teacher)
-            {{ $teacher->name }},
-        @endforeach
-    </p>
-    <!-- Display other relevant fields -->
+    <td>{{ $apply->id_apply }}</td>
 
+        @foreach ($teacher as $teach )
+
+
+        @if($teach['id'] == $apply->id_teacher_apply )
+              <td>{{ $teach['name'] }}</td>
+        @endif
+     @endforeach
+     @foreach ($schools as $Sch )
+
+
+     @if($Sch['id'] == $apply->id_school_apply )
+           <td>{{ $Sch['name'] }}</td>
+     @endif
+  @endforeach
+    <td>{{ $apply->status }}</td>
 </tr>
 @endforeach
 </table>

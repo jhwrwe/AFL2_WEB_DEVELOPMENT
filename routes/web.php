@@ -32,11 +32,15 @@ Route::view('/tentangkita', 'tentangkita',[
     "ActiveAbouttext"=>"  bg-secondary rounded text-white"
 ]
 );
-Route::get('/schoolseeing',[SchoolsController::class,'index']);
-Route::get('/schoolseeing/{id}', [SchoolsController::class,'bruh']);
-Route::get('/ViewTeacher',[TeachersController::class,'index']);
+Route::get('/view_schools',[SchoolsController::class,'index']);
+Route::get('/Schools_info/{id}', [SchoolsController::class,'Show_Schools_info']);
+Route::get('/view_teacher',[TeachersController::class,'index']);
+Route::get('/Teachers_info/{id}', [TeachersController::class,'Show_Teachers_info']);
+Route::get('/teachers_info/CV/{id}', [TeachersController::class,'Show_teachers_cv']);
 Route::get('/view_apply',[ApplyController::class,'index']);
-Route::get('/ViewTeacher/{id}', [TeachersController::class,'bruh']);
+
+
+
 Route::view('/help', 'help',[
     "pagetitle" => "About",
     "maintitle" => "About My Library",

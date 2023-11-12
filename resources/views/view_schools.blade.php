@@ -11,15 +11,15 @@
         <th> course </th>
         <th> criteria </th>
 </tr>
-@foreach($projects as $pro)
+ @foreach($projects as $pro)
 
 <tr>
     <td>{{$loop-> index+1}}</td>
-    <td><a href ="/project/{{$pro['id']}}">{{$pro['name']}}<a></td>
+    <td><a href ="/Schools_info/{{$pro['id']}}">{{$pro['name']}}<a></td>
     <td>{{$pro['course']}}</td>
     <td>{{$pro['criteria']}}</td>
 
 </tr>
-@endforeach
+ @endforeach
 </table>
 @endsection

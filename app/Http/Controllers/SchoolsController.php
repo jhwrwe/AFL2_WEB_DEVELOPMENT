@@ -9,16 +9,16 @@ use App\Http\Requests\UpdateSchoolsRequest;
 class SchoolsController extends Controller
 {
     public function index(){
-        return view('schoolseeing',[
+        return view('view_schools',[
             "pagetitle" => "projek",
         "maintitle" => "projek data",
         'projects' => Schools::all(),
         "ActiveProjek"=> "active"
         ]);
     }
-    public function bruh($id){
+    public function Show_Schools_info($id){
         $project = Schools::find($id);
-            return view('show',[
+            return view('Schools_info',[
                 'pagetitle' => 'project',
                 'maintitle' => 'project Data',
                 'project'=> $project,

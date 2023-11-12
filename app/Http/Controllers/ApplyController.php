@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\Apply;
+use App\Models\schools;
+use App\Models\teachers;
 use App\Http\Requests\StoreApplyRequest;
 use App\Http\Requests\UpdateApplyRequest;
 
@@ -15,6 +17,7 @@ class ApplyController extends Controller
     {
         $applies = Apply::with('schools', 'teachers')->get();
 
-        return view('view_apply', ['applies' => $applies]);
+        return view('view_apply', ['applies' => $applies,
+    'teacher'=>teachers::all(),'schools'=>schools::all()]);
     }
 }
