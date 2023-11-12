@@ -12,7 +12,7 @@
         <div class="border-b border-gray-900/10 pb-6">
             <div class="flex justify-center mb-4">
                 <div class="rounded-full border-4 border-white">
-                    <img class="h-24 w-24 rounded-full" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" src="images/{{ $project['image'] }}">
+                    <img class="h-24 w-24 rounded-full" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" src="\images\{{ $project['image'] }}">
                 </div>
             </div>
                 <h2 class="text-lg font-semibold leading-7 text-gray-900 text-center mb-3">Personal Information</h2>

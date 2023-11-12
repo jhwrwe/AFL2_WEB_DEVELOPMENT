@@ -19,7 +19,9 @@ class ApplyController extends Controller
 
         return view('view_apply', ['applies' => $applies,
     'teacher'=>teachers::all(),'schools'=>schools::all(),
-    "ActiveApply"=>  'md:dark:text-blue-500'
+    "ActiveApply"=>  "md:dark:text-blue-500"
 ]);
     }
+
+
 }
