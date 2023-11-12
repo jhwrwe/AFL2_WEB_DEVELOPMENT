@@ -106,13 +106,13 @@
                 <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
             </div>
 
-            <div class="flex flex-wrap justify-center">
+            <div class="flex flex-wrap justify-center p-10">
                 @foreach ($projects as $project)
                 <div class="flex flex-col w-5/6 lg:w-1/4 mx-auto lg:mx-0 rounded-lg bg-white mt-4 sm:-mt-6 shadow-lg z-10">
                     <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
                         <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
                             <div class="flex items-center justify-center">
-                                <img src="" class="w-16 h-16 rounded-full">
+                                <img src="/images/{{ $project['image'] }}" class="w-64 h-64  rounded-full">
                             </div>
                         </div>
                         <div class="w-full p-8 text-3xl font-bold text-center">
