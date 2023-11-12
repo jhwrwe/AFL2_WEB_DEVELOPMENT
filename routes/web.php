@@ -22,9 +22,11 @@ Route::get('/', function () {
     return view('index',[
         "pagetitle" => "Home",
     "maintitle" => "",
-    "ActiveMaintext"=>"md:dark:text-blue-500"
+    "ActiveMaintext"=>"md:dark:text-blue-500",
     ]);
 });
+
+
 Route::view('/tentangkita', 'tentangkita',[
     "pagetitle" => "About",
     "maintitle" => "About My Library",
