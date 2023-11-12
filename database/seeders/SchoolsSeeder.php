@@ -87,7 +87,7 @@ class SchoolsSeeder extends Seeder
             'course' => "Desain Grafis",
             'criteria' => "Dibutuhkan portofolio desain digital",
             'aboutcourse' => "Mempelajari desain visual, animasi, dan pengembangan web. Program ini mempersiapkan mahasiswa untuk karir dalam industri desain dan teknologi.",
-            'image' => "",
+            'image' => "Schools_11.jpg",
             ]);
 
     }
