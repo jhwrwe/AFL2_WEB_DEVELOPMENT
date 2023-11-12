@@ -43,8 +43,7 @@ Route::view('/help', 'help',[
     "pagetitle" => "About",
     "maintitle" => "About My Library",
     "Activecontacttext"=>"md:dark:text-blue-500"
-]
-);
+]);
 
 
 Route::middleware([
