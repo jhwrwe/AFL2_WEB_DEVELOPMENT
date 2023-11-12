@@ -22,6 +22,6 @@ class Teachers extends Model
     }
     public function applies()
     {
-        return $this->belongsToMany(Apply::class, 'applies', 'id_teacher_apply', 'id_apply');
+        return $this->belongsToMany(Apply::class, 'applies', 'id_teacher_apply', 'id');
     }
 }
