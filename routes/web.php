@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Models\Schools;
 use App\Models\Teachers;
 use App\Http\Controllers\SchoolsController;
+use App\Http\Controllers\OurTeamController;
 use App\Http\Controllers\ApplyController;
 use App\Http\Controllers\TeachersController;
 /*
@@ -35,6 +36,7 @@ Route::get('/Schools_info/{id}', [SchoolsController::class,'Show_Schools_info'])
 Route::get('/view_teacher',[TeachersController::class,'index']);
 Route::get('/Teachers_info/{id}', [TeachersController::class,'Show_Teachers_info']);
 Route::get('/teachers_info/CV/{id}', [TeachersController::class,'Show_teachers_cv']);
+Route::get('/tentangkita', [OurTeamController::class,'index']);
 Route::get('/view_apply',[ApplyController::class,'index']);
 
 

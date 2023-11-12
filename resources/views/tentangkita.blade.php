@@ -13,19 +13,8 @@
     </style>
 </head>
 <body>
-    <div class ="bg-black">
-        <div
-            class="d-flex flex-column align-items-center justify-content-center vh-100 position-relative m-0 p-0 bg-light">
-            <div class="position-relative display-1 text-white mb-0 p-4"
-                style="z-index: 2; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); width: 100%; text-align: center;">
-                Loading
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid py-5 bg-image text-white text-center">
-        <h1 class="mb-4 text-black">About Us</h1>
-        <p class="lead text-black">Creating Connections, Empowering Educators</p>
-    </div>
+
+    <br />
     <section class="bg-gray-100 py-8">
         <div class="container mx-auto px-2 pt-4 pb-12 text-gray-800">
           <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
@@ -47,7 +36,7 @@
                 </ul>
               </div>
               <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
-                
+
                 <div class="flex items-center justify-center">
                   <button class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
                     Sign Up
@@ -107,6 +96,43 @@
             </div>
         </div>
     </div>
+    <br />
+    <section class="bg-gray-100 py-8">
+        <div class="container mx-auto px-2 pt-4 pb-12 text-gray-800">
+            <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
+                Meet the Team
+            </h2>
+            <div class="w-full mb-4">
+                <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
+            </div>
+
+            <div class="flex flex-wrap justify-center">
+                @foreach ($projects as $project)
+                <div class="flex flex-col w-5/6 lg:w-1/4 mx-auto lg:mx-0 rounded-lg bg-white mt-4 sm:-mt-6 shadow-lg z-10">
+                    <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
+                        <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
+                            <div class="flex items-center justify-center">
+                                <img src="" class="w-16 h-16 rounded-full">
+                            </div>
+                        </div>
+                        <div class="w-full p-8 text-3xl font-bold text-center">
+                            {{ $project->name }}
+                        </div>
+                        <div class="h-1 w-full gradient my-0 py-0 rounded-t"></div>
+                        <div class="w-full text-center text-base font-bold">
+                            <p class="py-4">{{ $project->title }}</p>
+                            <p class="py-4">{{ $project->date }}</p>
+                            <p class="py-4">{{ $project->major }}</p>
+                            <p class="py-4">{{ $project->description }}</p>
+                        </div>
+                    </div>
+                </div>
+                @endforeach
+            </div>
+        </div>
+    </section>
+
+
 
     <!-- Bootstrap JavaScript (required for the carousel) -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>

@@ -12,11 +12,11 @@ class OurTeamController extends Controller
      * Display a listing of the resource.
      */
     public function index(){
-        return view('schoolseeing',[
+        return view('tentangkita',[
             "pagetitle" => "projek",
         "maintitle" => "projek data",
         'projects' => OurTeam::all(),
-        "ActiveProjek"=> "active"
+        "ActiveAbouttext"=>"md:dark:text-blue-500"
         ]);
     }
     public function bruh($id){
