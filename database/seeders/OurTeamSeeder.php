@@ -21,7 +21,7 @@ class OurTeamSeeder extends Seeder
             'image' => 'our_team_1.jpg'
         ]);
         DB::table('our_teams')->insert([
-            'name' => 'Sophia Rodriguez',
+            'name' => 'Sophia Rodri',
             'title' => 'UX/UI Designer',
             'date' => '1988-07-30',
             'major' => 'Design and Visual Arts',
