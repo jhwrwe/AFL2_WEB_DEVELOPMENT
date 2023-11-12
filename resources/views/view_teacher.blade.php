@@ -19,7 +19,7 @@
 
 <tr>
     <td>{{$loop-> index+1}}</td>
-    <td><a href ="/project/{{$pro['id']}}">{{$pro['name']}}<a></td>
+    <td><a href ="/Teachers_info/{{$pro['id']}}">{{$pro['name']}}<a></td>
     <td>{{$pro['majors']}}</td>
     <td>{{$pro['Hobbys']}}</td>
     <td>{{$pro['age']}}</td>

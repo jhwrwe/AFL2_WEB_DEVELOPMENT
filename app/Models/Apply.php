@@ -11,11 +11,12 @@ class Apply extends Model
     protected $fillable =['id_apply','id_school_apply','id_teacher_apply','status'];
     public function schools()
     {
-        return $this->belongsToMany(Schools::class, 'apply_school', 'id_apply', 'id_school');
+        return $this->belongsToMany(Schools::class, 'applies', 'id_apply', 'id_school_apply');
     }
 
     public function teachers()
     {
-        return $this->belongsToMany(Teachers::class, 'apply_teacher', 'id_apply', 'id_teacher');
+        return $this->belongsToMany(Teachers::class, 'applies', 'id_apply', 'id_teacher_apply');
     }
+
 }
