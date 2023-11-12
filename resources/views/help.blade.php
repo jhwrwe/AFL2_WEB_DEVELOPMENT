@@ -22,523 +22,204 @@
         }
     </style>
 
-
     <body>
-        <div class ="bg-black">
+        <div class ="bg-white">
             <div
                 class="d-flex flex-column align-items-center justify-content-center vh-100 position-relative m-0 p-0 bg-light">
                 <div class="position-relative display-1 text-white mb-0 p-4"
-                    style="z-index: 2; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); width: 100%; text-align: center;">
+                    style="z-index: 2; text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5); width: 100%; text-align: center;">
                     Loading
                 </div>
             </div>
         </div>
-            <article id="the-article">
+        <article id="the-article">
 
-                <div>
-                    <div class="mx-auto max-w-6xl">
-                        <div class="p-2 rounded">
-                            <div class="flex flex-col md:flex-row">
-                                <div class="md:w-1/3 p-4 text-sm">
-
-                                    <div class="sticky inset-x-0 top-0 left-0 py-12">
-
-                                        <div class="text-3xl text-green-400 mb-8">Frequently asked questions.</div>
-                                        <div class="mb-2">Lorem Ipsum ?</div>
-                                        <div class="text-xs text-gray-600">See our FAQ for more details</div>
-
-                                        <div class="relative text-gray-600 mt-8 lg:mr-16">
-                                            <input x-ref="searchField" x-model="search"
-                                                x-on:keydown.window.prevent.slash="$refs.searchField.focus()" type="search"
-                                                name="serch" placeholder="Search"
-                                                class="bg-white w-full h-10 px-5 rounded-full text-sm focus:outline-none">
-                                            <button type="submit"
-                                                class="focus:outline-none absolute right-0 top-0 mt-3 mr-4">
-                                                <svg class="h-4 w-4 fill-current" xmlns="http://www.w3.org/2000/svg"
-                                                    xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1"
-                                                    x="0px" y="0px" viewBox="0 0 56.966 56.966"
-                                                    style="enable-background:new 0 0 56.966 56.966;" xml:space="preserve"
-                                                    width="512px" height="512px">
-                                                    <path
-                                                        d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23  s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92  c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17  s-17-7.626-17-17S14.61,6,23.984,6z" />
-                                                </svg>
-                                            </button>
-                                        </div>
-
+            <div>
+                <div class="mx-auto max-w-6xl">
+                    <div class="p-2 rounded">
+                        <div class="flex flex-col md:flex-row">
+                            <div class="md:w-1/3 p-4 text-sm">
+                                <div class="sticky inset-x-0 top-10 left-0 py-12">
+                                    <div class="text-3xl mb-8">
+                                        <span
+                                            class="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500">Frequently
+                                            Asked Questions</span>
                                     </div>
+                                    <div class="mb-2">Any Questions ?</div>
+                                    <div class="text-xs text-gray-600">See our FAQ for more details</div>
                                 </div>
-                                <div class="md:w-2/3 py-12 ">
-                                    <div class="p-4">
+                            </div>
+                            <div class="md:w-2/3 py-12 ">
+                                <div class="p-4">
 
-                                        <div class="item px-6 py-6" x-data="{ isOpen: false }">
-                                            <a href="#" class="flex items-center justify-between"
-                                                @click.prevent="isOpen = true">
-                                                <h4 :class="{ 'text-green-400 font-medium': isOpen == true }">Lorem Ipsum ?
-                                                </h4>
-                                                <svg :class="{ 'transform rotate-180': isOpen == true }"
-                                                    class="w-5 h-5 text-gray-500" fill="none" stroke-linecap="round"
-                                                    stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
-                                                    stroke="currentColor">
-                                                    <path d="M19 9l-7 7-7-7"></path>
-                                                </svg>
-                                            </a>
-                                            <div x-show="isOpen" @click.away="isOpen = false" class="mt-3"
-                                                :class="{ 'text-gray-600': isOpen == true }">
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                                    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                                                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                                                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                                                    mollit anim id est laborum.</p>
-                                            </div>
-                                        </div>
-
-                                        <div class="item px-6 py-6" x-data="{ isOpen: false }">
-                                            <a href="#" class="flex items-center justify-between"
-                                                @click.prevent="isOpen = true">
-                                                <h4 :class="{ 'text-green-400 font-medium': isOpen == true }">Lorem Ipsum ?
-                                                </h4>
-                                                <svg :class="{ 'transform rotate-180': isOpen == true }"
-                                                    class="w-5 h-5 text-gray-500" fill="none" stroke-linecap="round"
-                                                    stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
-                                                    stroke="currentColor">
-                                                    <path d="M19 9l-7 7-7-7"></path>
-                                                </svg>
-                                            </a>
-                                            <div x-show="isOpen" @click.away="isOpen = false" class="mt-3"
-                                                :class="{ 'text-gray-600': isOpen == true }">
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                                    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                                                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                                                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                                                    mollit anim id est laborum.</p>
-                                            </div>
-                                        </div>
-
-                                        <div class="item px-6 py-6" x-data="{ isOpen: false }">
-                                            <a href="#" class="flex items-center justify-between"
-                                                @click.prevent="isOpen = true">
-                                                <h4 :class="{ 'text-green-400 font-medium': isOpen == true }">Lorem Ipsum ?
-                                                </h4>
-                                                <svg :class="{ 'transform rotate-180': isOpen == true }"
-                                                    class="w-5 h-5 text-gray-500" fill="none" stroke-linecap="round"
-                                                    stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
-                                                    stroke="currentColor">
-                                                    <path d="M19 9l-7 7-7-7"></path>
-                                                </svg>
-                                            </a>
-                                            <div x-show="isOpen" @click.away="isOpen = false" class="mt-3"
-                                                :class="{ 'text-gray-600': isOpen == true }">
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                                    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                                                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                                                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                                                    mollit anim id est laborum.</p>
-                                            </div>
-                                        </div>
-
-                                        <div class="item px-6 py-6" x-data="{ isOpen: false }">
-                                            <a href="#" class="flex items-center justify-between"
-                                                @click.prevent="isOpen = true">
-                                                <h4 :class="{ 'text-green-400 font-medium': isOpen == true }">Lorem Ipsum ?
-                                                </h4>
-                                                <svg :class="{ 'transform rotate-180': isOpen == true }"
-                                                    class="w-5 h-5 text-gray-500" fill="none" stroke-linecap="round"
-                                                    stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
-                                                    stroke="currentColor">
-                                                    <path d="M19 9l-7 7-7-7"></path>
-                                                </svg>
-                                            </a>
-                                            <div x-show="isOpen" @click.away="isOpen = false" class="mt-3"
-                                                :class="{ 'text-gray-600': isOpen == true }">
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                                    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                                                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                                                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                                                    mollit anim id est laborum.</p>
-                                            </div>
-                                        </div>
-
-                                        <div class="item px-6 py-6" x-data="{ isOpen: false }">
-                                            <a href="#" class="flex items-center justify-between"
-                                                @click.prevent="isOpen = true">
-                                                <h4 :class="{ 'text-green-400 font-medium': isOpen == true }">Lorem Ipsum ?
-                                                </h4>
-                                                <svg :class="{ 'transform rotate-180': isOpen == true }"
-                                                    class="w-5 h-5 text-gray-500" fill="none" stroke-linecap="round"
-                                                    stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
-                                                    stroke="currentColor">
-                                                    <path d="M19 9l-7 7-7-7"></path>
-                                                </svg>
-                                            </a>
-                                            <div x-show="isOpen" @click.away="isOpen = false" class="mt-3"
-                                                :class="{ 'text-gray-600': isOpen == true }">
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                                    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                                                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                                                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                                                    mollit anim id est laborum.</p>
-                                            </div>
-                                        </div>
-
-                                        <div class="item px-6 py-6" x-data="{ isOpen: false }">
-                                            <a href="#" class="flex items-center justify-between"
-                                                @click.prevent="isOpen = true">
-                                                <h4 :class="{ 'text-green-400 font-medium': isOpen == true }">Lorem Ipsum ?
-                                                </h4>
-                                                <svg :class="{ 'transform rotate-180': isOpen == true }"
-                                                    class="w-5 h-5 text-gray-500" fill="none" stroke-linecap="round"
-                                                    stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
-                                                    stroke="currentColor">
-                                                    <path d="M19 9l-7 7-7-7"></path>
-                                                </svg>
-                                            </a>
-                                            <div x-show="isOpen" @click.away="isOpen = false" class="mt-3"
-                                                :class="{ 'text-gray-600': isOpen == true }">
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                                    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                                                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                                                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                                                    mollit anim id est laborum.</p>
-                                            </div>
-                                        </div>
-
-                                        <div class="item px-6 py-6" x-data="{ isOpen: false }">
-                                            <a href="#" class="flex items-center justify-between"
-                                                @click.prevent="isOpen = true">
-                                                <h4 :class="{ 'text-green-400 font-medium': isOpen == true }">Lorem Ipsum ?
-                                                </h4>
-                                                <svg :class="{ 'transform rotate-180': isOpen == true }"
-                                                    class="w-5 h-5 text-gray-500" fill="none" stroke-linecap="round"
-                                                    stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
-                                                    stroke="currentColor">
-                                                    <path d="M19 9l-7 7-7-7"></path>
-                                                </svg>
-                                            </a>
-                                            <div x-show="isOpen" @click.away="isOpen = false" class="mt-3"
-                                                :class="{ 'text-gray-600': isOpen == true }">
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                                    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                                                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                                                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                                                    mollit anim id est laborum.</p>
-                                            </div>
-                                        </div>
-
-                                        <div class="item px-6 py-6" x-data="{ isOpen: false }">
-                                            <a href="#" class="flex items-center justify-between"
-                                                @click.prevent="isOpen = true">
-                                                <h4 :class="{ 'text-green-400 font-medium': isOpen == true }">Lorem Ipsum ?
-                                                </h4>
-                                                <svg :class="{ 'transform rotate-180': isOpen == true }"
-                                                    class="w-5 h-5 text-gray-500" fill="none" stroke-linecap="round"
-                                                    stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
-                                                    stroke="currentColor">
-                                                    <path d="M19 9l-7 7-7-7"></path>
-                                                </svg>
-                                            </a>
-                                            <div x-show="isOpen" @click.away="isOpen = false" class="mt-3"
-                                                :class="{ 'text-gray-600': isOpen == true }">
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                                    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                                                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                                                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                                                    mollit anim id est laborum.</p>
-                                            </div>
-                                        </div>
-
-                                        <div class="item px-6 py-6" x-data="{ isOpen: false }">
-                                            <a href="#" class="flex items-center justify-between"
-                                                @click.prevent="isOpen = true">
-                                                <h4 :class="{ 'text-green-400 font-medium': isOpen == true }">Lorem Ipsum ?
-                                                </h4>
-                                                <svg :class="{ 'transform rotate-180': isOpen == true }"
-                                                    class="w-5 h-5 text-gray-500" fill="none" stroke-linecap="round"
-                                                    stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
-                                                    stroke="currentColor">
-                                                    <path d="M19 9l-7 7-7-7"></path>
-                                                </svg>
-                                            </a>
-                                            <div x-show="isOpen" @click.away="isOpen = false" class="mt-3"
-                                                :class="{ 'text-gray-600': isOpen == true }">
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                                    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                                                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                                                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                                                    mollit anim id est laborum.</p>
-                                            </div>
-                                        </div>
-
-                                        <div class="item px-6 py-6" x-data="{ isOpen: false }">
-                                            <a href="#" class="flex items-center justify-between"
-                                                @click.prevent="isOpen = true">
-                                                <h4 :class="{ 'text-green-400 font-medium': isOpen == true }">Lorem Ipsum ?
-                                                </h4>
-                                                <svg :class="{ 'transform rotate-180': isOpen == true }"
-                                                    class="w-5 h-5 text-gray-500" fill="none" stroke-linecap="round"
-                                                    stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
-                                                    stroke="currentColor">
-                                                    <path d="M19 9l-7 7-7-7"></path>
-                                                </svg>
-                                            </a>
-                                            <div x-show="isOpen" @click.away="isOpen = false" class="mt-3"
-                                                :class="{ 'text-gray-600': isOpen == true }">
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                                    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                                                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                                                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                                                    mollit anim id est laborum.</p>
-                                            </div>
-                                        </div>
-
-                                        <div class="item px-6 py-6" x-data="{ isOpen: false }">
-                                            <a href="#" class="flex items-center justify-between"
-                                                @click.prevent="isOpen = true">
-                                                <h4 :class="{ 'text-green-400 font-medium': isOpen == true }">Lorem Ipsum ?
-                                                </h4>
-                                                <svg :class="{ 'transform rotate-180': isOpen == true }"
-                                                    class="w-5 h-5 text-gray-500" fill="none" stroke-linecap="round"
-                                                    stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
-                                                    stroke="currentColor">
-                                                    <path d="M19 9l-7 7-7-7"></path>
-                                                </svg>
-                                            </a>
-                                            <div x-show="isOpen" @click.away="isOpen = false" class="mt-3"
-                                                :class="{ 'text-gray-600': isOpen == true }">
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                                    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                                                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                                                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                                                    mollit anim id est laborum.</p>
-                                            </div>
-                                        </div>
-
-                                        <div class="item px-6 py-6" x-data="{ isOpen: false }">
-                                            <a href="#" class="flex items-center justify-between"
-                                                @click.prevent="isOpen = true">
-                                                <h4 :class="{ 'text-green-400 font-medium': isOpen == true }">Lorem Ipsum ?
-                                                </h4>
-                                                <svg :class="{ 'transform rotate-180': isOpen == true }"
-                                                    class="w-5 h-5 text-gray-500" fill="none" stroke-linecap="round"
-                                                    stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
-                                                    stroke="currentColor">
-                                                    <path d="M19 9l-7 7-7-7"></path>
-                                                </svg>
-                                            </a>
-                                            <div x-show="isOpen" @click.away="isOpen = false" class="mt-3"
-                                                :class="{ 'text-gray-600': isOpen == true }">
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                                    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                                                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                                                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                                                    mollit anim id est laborum.</p>
-                                            </div>
-                                        </div>
-
-                                        <div class="item px-6 py-6" x-data="{ isOpen: false }">
-                                            <a href="#" class="flex items-center justify-between"
-                                                @click.prevent="isOpen = true">
-                                                <h4 :class="{ 'text-green-400 font-medium': isOpen == true }">Lorem Ipsum ?
-                                                </h4>
-                                                <svg :class="{ 'transform rotate-180': isOpen == true }"
-                                                    class="w-5 h-5 text-gray-500" fill="none" stroke-linecap="round"
-                                                    stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
-                                                    stroke="currentColor">
-                                                    <path d="M19 9l-7 7-7-7"></path>
-                                                </svg>
-                                            </a>
-                                            <div x-show="isOpen" @click.away="isOpen = false" class="mt-3"
-                                                :class="{ 'text-gray-600': isOpen == true }">
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                                    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                                                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                                                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                                                    mollit anim id est laborum.</p>
-                                            </div>
-                                        </div>
-
-                                        <div class="item px-6 py-6" x-data="{ isOpen: false }">
-                                            <a href="#" class="flex items-center justify-between"
-                                                @click.prevent="isOpen = true">
-                                                <h4 :class="{ 'text-green-400 font-medium': isOpen == true }">Lorem Ipsum ?
-                                                </h4>
-                                                <svg :class="{ 'transform rotate-180': isOpen == true }"
-                                                    class="w-5 h-5 text-gray-500" fill="none" stroke-linecap="round"
-                                                    stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
-                                                    stroke="currentColor">
-                                                    <path d="M19 9l-7 7-7-7"></path>
-                                                </svg>
-                                            </a>
-                                            <div x-show="isOpen" @click.away="isOpen = false" class="mt-3"
-                                                :class="{ 'text-gray-600': isOpen == true }">
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                                    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                                                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                                                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                                                    mollit anim id est laborum.</p>
-                                            </div>
-                                        </div>
-
-                                        <div class="item px-6 py-6" x-data="{ isOpen: false }">
-                                            <a href="#" class="flex items-center justify-between"
-                                                @click.prevent="isOpen = true">
-                                                <h4 :class="{ 'text-green-400 font-medium': isOpen == true }">Lorem Ipsum ?
-                                                </h4>
-                                                <svg :class="{ 'transform rotate-180': isOpen == true }"
-                                                    class="w-5 h-5 text-gray-500" fill="none" stroke-linecap="round"
-                                                    stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
-                                                    stroke="currentColor">
-                                                    <path d="M19 9l-7 7-7-7"></path>
-                                                </svg>
-                                            </a>
-                                            <div x-show="isOpen" @click.away="isOpen = false" class="mt-3"
-                                                :class="{ 'text-gray-600': isOpen == true }">
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                                    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                                                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                                                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                                                    mollit anim id est laborum.</p>
-                                            </div>
-                                        </div>
-
-                                        <div class="item px-6 py-6" x-data="{ isOpen: false }">
-                                            <a href="#" class="flex items-center justify-between"
-                                                @click.prevent="isOpen = true">
-                                                <h4 :class="{ 'text-green-400 font-medium': isOpen == true }">Lorem Ipsum ?
-                                                </h4>
-                                                <svg :class="{ 'transform rotate-180': isOpen == true }"
-                                                    class="w-5 h-5 text-gray-500" fill="none" stroke-linecap="round"
-                                                    stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
-                                                    stroke="currentColor">
-                                                    <path d="M19 9l-7 7-7-7"></path>
-                                                </svg>
-                                            </a>
-                                            <div x-show="isOpen" @click.away="isOpen = false" class="mt-3"
-                                                :class="{ 'text-gray-600': isOpen == true }">
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                                    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                                                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                                                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                                                    mollit anim id est laborum.</p>
-                                            </div>
-                                        </div>
-
-                                        <div class="item px-6 py-6" x-data="{ isOpen: false }">
-                                            <a href="#" class="flex items-center justify-between"
-                                                @click.prevent="isOpen = true">
-                                                <h4 :class="{ 'text-green-400 font-medium': isOpen == true }">Lorem Ipsum ?
-                                                </h4>
-                                                <svg :class="{ 'transform rotate-180': isOpen == true }"
-                                                    class="w-5 h-5 text-gray-500" fill="none" stroke-linecap="round"
-                                                    stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
-                                                    stroke="currentColor">
-                                                    <path d="M19 9l-7 7-7-7"></path>
-                                                </svg>
-                                            </a>
-                                            <div x-show="isOpen" @click.away="isOpen = false" class="mt-3"
-                                                :class="{ 'text-gray-600': isOpen == true }">
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                                    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                                                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                                                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                                                    mollit anim id est laborum.</p>
-                                            </div>
-                                        </div>
-
-                                        <div class="item px-6 py-6" x-data="{ isOpen: false }">
-                                            <a href="#" class="flex items-center justify-between"
-                                                @click.prevent="isOpen = true">
-                                                <h4 :class="{ 'text-green-400 font-medium': isOpen == true }">Lorem Ipsum ?
-                                                </h4>
-                                                <svg :class="{ 'transform rotate-180': isOpen == true }"
-                                                    class="w-5 h-5 text-gray-500" fill="none" stroke-linecap="round"
-                                                    stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
-                                                    stroke="currentColor">
-                                                    <path d="M19 9l-7 7-7-7"></path>
-                                                </svg>
-                                            </a>
-                                            <div x-show="isOpen" @click.away="isOpen = false" class="mt-3"
-                                                :class="{ 'text-gray-600': isOpen == true }">
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                                    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                                                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                                                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                                                    mollit anim id est laborum.</p>
-                                            </div>
+                                    <div class="item px-6 py-6" x-data="{ isOpen: false }">
+                                        <a href="#" class="flex items-center justify-between"
+                                            @click.prevent="isOpen = true">
+                                            <h4 :class="{ 'text-green-400 font-medium': isOpen == true }">Apa itu
+                                                Marketplace Guru ?
+                                            </h4>
+                                            <svg :class="{ 'transform rotate-180': isOpen == true }"
+                                                class="w-5 h-5 text-gray-500" fill="none" stroke-linecap="round"
+                                                stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
+                                                stroke="currentColor">
+                                                <path d="M19 9l-7 7-7-7"></path>
+                                            </svg>
+                                        </a>
+                                        <div x-show="isOpen" @click.away="isOpen = false" class="mt-3"
+                                            :class="{ 'text-gray-600': isOpen == true }">
+                                            <p>Marketplace Guru adalah sebuah platform online yang menghubungkan guru dan
+                                                sekolah di Indonesia. Marketplace Guru menyediakan basis data yang berisi
+                                                profil guru yang berkualitas dan berkompeten di seluruh Indonesia.
+                                                Sekolah-sekolah dapat mencari dan merekrut guru sesuai dengan kebutuhan dan
+                                                formasi mereka melalui sistem online yang mudah, cepat, dan aman.
+                                                Marketplace Guru juga memberikan insentif dan penghargaan bagi guru yang
+                                                berprestasi dan berdedikasi tinggi. Marketplace Guru adalah solusi inovatif
+                                                yang ditawarkan oleh Kementerian Pendidikan, Kebudayaan, Riset dan Teknologi
+                                                (Kemendikbud Ristek) yang bertujuan untuk memenuhi kebutuhan guru dan
+                                                meningkatkan mutu pendidikan di Indonesia.</p>
                                         </div>
                                     </div>
 
+                                    <div class="item px-6 py-6" x-data="{ isOpen: false }">
+                                        <a href="#" class="flex items-center justify-between"
+                                            @click.prevent="isOpen = true">
+                                            <h4 :class="{ 'text-green-400 font-medium': isOpen == true }">Siapa saja yang
+                                                bisa masuk ke dalam basis data Marketplace Guru ?
+                                            </h4>
+                                            <svg :class="{ 'transform rotate-180': isOpen == true }"
+                                                class="w-5 h-5 text-gray-500" fill="none" stroke-linecap="round"
+                                                stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
+                                                stroke="currentColor">
+                                                <path d="M19 9l-7 7-7-7"></path>
+                                            </svg>
+                                        </a>
+                                        <div x-show="isOpen" @click.away="isOpen = false" class="mt-3"
+                                            :class="{ 'text-gray-600': isOpen == true }">
+                                            <p>Ada dua golongan yang bisa masuk ke dalam basis data Marketplace Guru, yaitu
+                                                guru honorer yang lulus seleksi dan lulusan pendidikan profesi guru (PPG)
+                                                prajabatan. Guru honorer yang lulus seleksi adalah guru honorer yang telah
+                                                mengikuti dan dinyatakan lulus seleksi untuk menjadi calon guru ASN.
+                                                Nantinya, frekuensi seleksi guru ini bisa ditingkatkan lebih dari dari satu
+                                                kali dalam setahun. Lulusan PPG prajabatan adalah mereka yang lulus dari
+                                                pendidikan profesi guru dan dinyatakan memenuhi syarat sebagai calon guru
+                                                ASN. Program PPG dan mahasiswa PPG pun akan ditingkatkan.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="item px-6 py-6" x-data="{ isOpen: false }">
+                                        <a href="#" class="flex items-center justify-between"
+                                            @click.prevent="isOpen = true">
+                                            <h4 :class="{ 'text-green-400 font-medium': isOpen == true }">Bagaimana cara
+                                                sekolah mencari dan merekrut guru melalui website Marketplace Guru?
+                                            </h4>
+                                            <svg :class="{ 'transform rotate-180': isOpen == true }"
+                                                class="w-5 h-5 text-gray-500" fill="none" stroke-linecap="round"
+                                                stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
+                                                stroke="currentColor">
+                                                <path d="M19 9l-7 7-7-7"></path>
+                                            </svg>
+                                        </a>
+                                        <div x-show="isOpen" @click.away="isOpen = false" class="mt-3"
+                                            :class="{ 'text-gray-600': isOpen == true }">
+                                            <p>Sekolah yang ingin mencari dan merekrut guru melalui Marketplace Guru harus
+                                                mendaftar terlebih dahulu di website Marketplace Guru. Setelah mendaftar,
+                                                sekolah dapat mengakses basis data yang berisi profil guru yang boleh
+                                                mengajar di Indonesia. Sekolah dapat mencari guru berdasarkan kriteria yang
+                                                diinginkan, seperti nama, lokasi, bidang studi, kualifikasi, pengalaman,
+                                                prestasi, dll. Sekolah juga dapat berkomunikasi langsung dengan guru yang
+                                                diminati melalui fitur chat. Sekolah dapat mengangkat guru yang dipilih
+                                                untuk menjadi guru tetap atau kontrak sesuai dengan kesepakatan.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="item px-6 py-6" x-data="{ isOpen: false }">
+                                        <a href="#" class="flex items-center justify-between"
+                                            @click.prevent="isOpen = true">
+                                            <h4 :class="{ 'text-green-400 font-medium': isOpen == true }">Apa keuntungan
+                                                yang didapat oleh sekolah yang bergabung dengan Marketplace Guru?
+                                            </h4>
+                                            <svg :class="{ 'transform rotate-180': isOpen == true }"
+                                                class="w-5 h-5 text-gray-500" fill="none" stroke-linecap="round"
+                                                stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
+                                                stroke="currentColor">
+                                                <path d="M19 9l-7 7-7-7"></path>
+                                            </svg>
+                                        </a>
+                                        <div x-show="isOpen" @click.away="isOpen = false" class="mt-3"
+                                            :class="{ 'text-gray-600': isOpen == true }">
+                                            <p>1. Dapat mencari dan merekrut guru yang berkualitas, berkompeten, dan sesuai
+                                                dengan kebutuhan dan formasi sekolah dengan mudah, cepat, dan aman.</p>
+                                            <p>2. Dapat melihat profil, riwayat, dan prestasi guru-guru yang tersedia di
+                                                basis data secara lengkap dan akurat.</p>
+                                            <p>3. Dapat berkomunikasi langsung dengan guru-guru yang diminati melalui fitur
+                                                chat.</p>
+                                            <p>4. Dapat mengangkat guru yang dipilih untuk menjadi guru tetap atau kontrak
+                                                sesuai dengan kesepakatan.</p>
+                                            <p>5. Dapat meningkatkan mutu pendidikan dan kesejahteraan guru di sekolah.</p>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="item px-6 py-6" x-data="{ isOpen: false }">
+                                        <a href="#" class="flex items-center justify-between"
+                                            @click.prevent="isOpen = true">
+                                            <h4 :class="{ 'text-green-400 font-medium': isOpen == true }">Apa keuntungan
+                                                yang didapat oleh guru yang bergabung dengan Marketplace Guru?
+                                            </h4>
+                                            <svg :class="{ 'transform rotate-180': isOpen == true }"
+                                                class="w-5 h-5 text-gray-500" fill="none" stroke-linecap="round"
+                                                stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
+                                                stroke="currentColor">
+                                                <path d="M19 9l-7 7-7-7"></path>
+                                            </svg>
+                                        </a>
+                                        <div x-show="isOpen" @click.away="isOpen = false" class="mt-3"
+                                            :class="{ 'text-gray-600': isOpen == true }">
+                                            <p>1. Dapat menawarkan diri sebagai guru yang siap mengajar di sekolah-sekolah
+                                                yang membutuhkan guru dengan mudah, cepat, dan aman. </p>
+                                            <p>2. Dapat melihat lokasi dan jenis sekolah yang diinginkan sesuai dengan
+                                                preferensi.</p>
+                                            <p>3. Dapat mengecheck langsung dengan sekolah-sekolah yang tertarik dengan
+                                                profil guru.</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            
-            </article>
+        </div>
 
-            <div x-data="scrollHandler(document.getElementById('the-article'))" x-cloak aria-hidden="true" @scroll.window="calculateHeight(window.scrollY)"
-                class="fixed h-screen w-1 hover:bg-gray-200 top-0 left-0 bg-gray-300">
-                <div :style="`max-height:${height}%`" class="h-full bg-green-400"></div>
-            </div>
+        </article>
 
-            <div id="alpine-devtools" x-data="devtools()" x-show="alpines.length" x-init="start()">
-            </div>
-            <script>
-                function scrollHandler(element = null) {
-                    return {
-                        height: 0,
-                        element: element,
-                        calculateHeight(position) {
-                            const distanceFromTop = this.element.offsetTop
-                            const contentHeight = this.element.clientHeight
-                            const visibleContent = contentHeight - window.innerHeight
-                            const start = Math.max(0, position - distanceFromTop)
-                            const percent = (start / visibleContent) * 100;
-                            requestAnimationFrame(() => {
-                                this.height = percent;
-                            });
-                        },
-                        init() {
-                            this.element = this.element || document.body;
-                            this.calculateHeight(window.scrollY);
-                        }
-                    };
-                }
-            </script>
+        <div x-data="scrollHandler(document.getElementById('the-article'))" x-cloak aria-hidden="true" @scroll.window="calculateHeight(window.scrollY)"
+            class="fixed h-screen w-1 hover:bg-gray-200 top-0 left-0 bg-gray-300">
+            <div :style="`max-height:${height}%`" class="h-full bg-green-400"></div>
+        </div>
+
+        <div id="alpine-devtools" x-data="devtools()" x-show="alpines.length" x-init="start()">
+        </div>
+        <script>
+            function scrollHandler(element = null) {
+                return {
+                    height: 0,
+                    element: element,
+                    calculateHeight(position) {
+                        const distanceFromTop = this.element.offsetTop
+                        const contentHeight = this.element.clientHeight
+                        const visibleContent = contentHeight - window.innerHeight
+                        const start = Math.max(0, position - distanceFromTop)
+                        const percent = (start / visibleContent) * 100;
+                        requestAnimationFrame(() => {
+                            this.height = percent;
+                        });
+                    },
+                    init() {
+                        this.element = this.element || document.body;
+                        this.calculateHeight(window.scrollY);
+                    }
+                };
+            }
+        </script>
     </body>
