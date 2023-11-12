@@ -35,6 +35,14 @@
                   <li class="border-b py-4">Menjadi mitra strategis bagi pemerintah dalam mengembangkan sumber daya manusia yang unggul melalui pendidikan.</li>
                 </ul>
               </div>
+              <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
+
+                <div class="flex items-center justify-center">
+                  <button class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                    Sign Up
+                  </button>
+                </div>
+              </div>
             </div>
             <div class="flex flex-col w-5/6 lg:w-1/3 mx-auto lg:mx-0 rounded-lg bg-white mt-4 sm:-mt-6 shadow-lg z-10">
               <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
@@ -49,6 +57,14 @@
                   <li class="border-b py-4">Mendorong kerjasama dan kolaborasi antara guru, sekolah, dan pemerintah dalam meningkatkan mutu pendidikan.</li>
                 </ul>
               </div>
+              <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
+
+                <div class="flex items-center justify-center">
+                  <button class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                    Sign Up
+                  </button>
+                </div>
+              </div>
             </div>
             <div class="flex flex-col w-5/6 lg:w-1/4 mx-auto lg:mx-0 rounded-none lg:rounded-l-lg bg-white mt-4">
               <div class="flex-1 bg-white text-gray-600 rounded-t rounded-b-none overflow-hidden shadow">
@@ -61,10 +77,22 @@
                   <li class="border-b py-4">Menyediakan insentif dan penghargaan bagi guru yang berprestasi dan berdedikasi tinggi.</li>
                 </ul>
               </div>
+              <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
+
+                <div class="flex items-center justify-center">
+                  <button class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                    Sign Up
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
+        <div class="row mt-5 bg-light p-4">
+            <div class="col-lg-12">
+            </div>
+        </div>
     </div>
     <br />
     <section class="bg-gray-100 py-8">
@@ -89,8 +117,8 @@
                             {{ $project->name }}
                         </div>
                         <div class="h-1 w-full gradient my-0 py-0 rounded-t"></div>
-                        <div class="w-full text-center text-base font-bold">
-                            <p class="py-4">{{ $project->title }}</p>
+                        <div class="w-full text-center text-base" style="margin-bottom: 20px;"> <!-- Adding margin -->
+                            <p class="py-4 font-semibold">{{ $project->title }}</p>
                             <p class="py-4">{{ $project->date }}</p>
                             <p class="py-4">{{ $project->major }}</p>
                             <p class="py-4">{{ $project->description }}</p>
