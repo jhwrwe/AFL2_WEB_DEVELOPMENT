@@ -27,5 +27,7 @@ class OurTeamController extends Controller
                 'project'=> $project,
             ]);
 
+
+
 }
 }

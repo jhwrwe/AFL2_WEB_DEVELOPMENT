@@ -13,7 +13,7 @@ class SchoolsController extends Controller
             "pagetitle" => "projek",
         "maintitle" => "projek data",
         'projects' => Schools::all(),
-        "ActiveSchools"=>  'md:dark:text-blue-500'
+        "ActiveSchools"=>  "md:dark:text-blue-500"
         ]);
     }
     public function Show_Schools_info($id){
@@ -24,6 +24,5 @@ class SchoolsController extends Controller
                 'project'=> $project,
                 "ActiveSchoolsInfo"=>  'md:dark:text-blue-500'
             ]);
-
 }
 }
