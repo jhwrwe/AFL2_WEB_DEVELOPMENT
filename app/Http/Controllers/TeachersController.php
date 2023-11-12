@@ -13,7 +13,7 @@ class TeachersController extends Controller
             "pagetitle" => "projek",
         "maintitle" => "projek data",
         'projects' => Teachers::all(),
-        "ActiveTeachers"=> "md:dark:text-blue-500"
+        "ActiveTeachersText"=> "md:dark:text-blue-500"
         ]);
     }
 
