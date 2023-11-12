@@ -157,5 +157,6 @@
       </div>
     </div>
 </footer>
+<script src="/js/flowbite.min.js"></script>
 </body>
 </html>

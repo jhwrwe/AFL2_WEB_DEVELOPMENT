@@ -45,8 +45,7 @@
     </div>
     <div aria-label="group of cards" tabindex="0" class="focus:outline-none py-8 w-full">
         @foreach($applies as $user)
-        <div class="lg:flex w-full justify-between">
-            <!-- Left side (Teacher) -->
+        <div class="lg:flex sm:flex md:flex flex w-full justify-between">
             <div tabindex="0" aria-label="card" class="focus:outline-none w-1/2 lg:w-1/2 bg-white p-6 shadow-md rounded mb-7 apply-card">
                 <div class="flex items-center border-b border-gray-200 pb-6">
                     <div class="flex items-start w-full">

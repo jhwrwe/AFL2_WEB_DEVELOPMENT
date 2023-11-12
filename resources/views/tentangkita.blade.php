@@ -15,6 +15,10 @@
 <body>
 
     <br />
+    <br />
+    <br />
+    <br />
+    <br />
     <section class="bg-gray-100 py-8">
         <div class="container mx-auto px-2 pt-4 pb-12 text-gray-800">
           <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
@@ -36,6 +40,8 @@
                 </ul>
               </div>
               <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
+
+
               </div>
             </div>
             <div class="flex flex-col w-5/6 lg:w-1/3 mx-auto lg:mx-0 rounded-lg bg-white mt-4 sm:-mt-6 shadow-lg z-10">
@@ -52,6 +58,8 @@
                 </ul>
               </div>
               <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
+
+
               </div>
             </div>
             <div class="flex flex-col w-5/6 lg:w-1/4 mx-auto lg:mx-0 rounded-none lg:rounded-l-lg bg-white mt-4">
@@ -66,6 +74,8 @@
                 </ul>
               </div>
               <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
+
+
               </div>
             </div>
           </div>
@@ -99,7 +109,7 @@
                             {{ $project->name }}
                         </div>
                         <div class="h-1 w-full gradient my-0 py-0 rounded-t"></div>
-                        <div class="w-full text-center text-base" style="margin-bottom: 20px;"> <!-- Adding margin -->
+                        <div class="w-full text-center text-base" style="margin-bottom: 20px;">
                             <p class="py-4 font-semibold">{{ $project->title }}</p>
                             <p class="py-4">{{ $project->date }}</p>
                             <p class="py-4">{{ $project->major }}</p>
@@ -114,7 +124,7 @@
 
 
 
-    <!-- Bootstrap JavaScript (required for the carousel) -->
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>

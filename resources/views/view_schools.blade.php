@@ -15,7 +15,7 @@
     </style>
     <div class="container mx-auto py-12">
         <h1 class="text-4xl font-bold text-center mb-8">Meet Our School Representatives</h1>
-        <div class="grid grid-cols-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             @php
             $counter = 0;
             @endphp
