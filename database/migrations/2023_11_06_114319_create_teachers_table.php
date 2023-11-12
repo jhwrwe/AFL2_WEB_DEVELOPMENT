@@ -27,6 +27,9 @@ return new class extends Migration
             $table->String('Hobbys')->nullable();
             $table->Integer('age');
             $table->String('image')->nullable();
+            $table->String('about')->nullable();
+            $table->String('description')->nullable();
+            $table->String('phone');
             $table->timestamps();
         });
     }
