@@ -15,12 +15,13 @@
     </style>
 </head>
 <body>
-    <div class ="bg-black">
-      <div class="d-flex flex-column align-items-center justify-content-center vh-100 position-relative m-0 p-0 bg-light">
-        <div class="position-relative display-1 text-white mb-0 p-4" style="z-index: 2; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); width: 100%; text-align: center;">Loading</div>
-        <img class="position-absolute w-100 h-100 rounded" style="object-fit: cover; z-index: 1; opacity: 0.5;" src="images\shutterstock_2183363749-scaled.jpg" alt="Image">
+    <div class="bg-black">
+        <div class="d-flex flex-column align-items-center justify-content-center vh-100 position-relative m-0 p-0 bg-light">
+            <div class="position-relative display-1 text-white mb-0 p-4" style="z-index: 2; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); width: 100%; text-align: center;">Loading</div>
+            <img class="position-absolute w-100 h-100 rounded" style="object-fit: cover; z-index: 1; opacity: 0.5; max-width: 100%; max-height: 100%;" src="images\shutterstock_2183363749-scaled.jpg" alt="Image">
+        </div>
     </div>
-</div>
+
 <div class="pt-24">
     <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
       <!--Left Col-->
