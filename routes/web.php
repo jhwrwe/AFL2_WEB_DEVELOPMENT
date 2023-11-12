@@ -21,15 +21,13 @@ Route::get('/', function () {
     return view('index',[
         "pagetitle" => "Home",
     "maintitle" => "",
-    "ActiveMain"=> "active ",
-    "ActiveMaintext"=>" bg-secondary rounded text-white"
+    "ActiveMaintext"=>"md:dark:text-blue-500"
     ]);
 });
 Route::view('/tentangkita', 'tentangkita',[
     "pagetitle" => "About",
     "maintitle" => "About My Library",
-    "ActiveAbout"=> "active ",
-    "ActiveAbouttext"=>"  bg-secondary rounded text-white"
+    "ActiveAbouttext"=>"md:dark:text-blue-500"
 ]
 );
 Route::get('/view_schools',[SchoolsController::class,'index']);
@@ -44,8 +42,7 @@ Route::get('/view_apply',[ApplyController::class,'index']);
 Route::view('/help', 'help',[
     "pagetitle" => "About",
     "maintitle" => "About My Library",
-    "ActiveContact"=> "active",
-    "Activecontacttext"=>" bg-secondary rounded text-white"
+    "Activecontacttext"=>"md:dark:text-blue-500"
 ]
 );
 

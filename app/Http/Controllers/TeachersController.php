@@ -13,7 +13,7 @@ class TeachersController extends Controller
             "pagetitle" => "projek",
         "maintitle" => "projek data",
         'projects' => Teachers::all(),
-        "ActiveProjek"=> "active"
+        'ActiveTeachers'=> 'md:dark:text-blue-500'
         ]);
     }
 
@@ -23,6 +23,7 @@ class TeachersController extends Controller
                 'pagetitle' => 'project',
                 'maintitle' => 'project Data',
                 'project'=> $project,
+                'ActiveTeacherInfo'=> 'md:dark:text-blue-500'
             ]);
         }
         public function Show_teachers_cv($id){
@@ -31,6 +32,7 @@ class TeachersController extends Controller
                     'pagetitle' => 'project',
                     'maintitle' => 'project Data',
                     'project'=> $project,
+                    'ActiveTeacherCV'=>'md:dark:text-blue-500'
                 ]);
             }
 }
