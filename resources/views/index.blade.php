@@ -27,7 +27,7 @@
       <!--Left Col-->
       <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
         <p class="uppercase tracking-loose w-full"> Lets Start your journey</p>
-        <h1 class="my-4 text-5xl font-bold leading-tight">
+        <h1 class="my-4 text-5xl font-bold leading-tight bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500">
           Marketplace Guru
         </h1>
         <p class="leading-normal text-2xl mb-8">
@@ -39,7 +39,7 @@
       </div>
       <!--Right Col-->
       <div class="w-full md:w-3/5 py-6 text-center">
-        <img class="w-full md:w-4/5 z-50" src="hero.png" />
+        <img class="w-full md:w-4/5 z-50" src="/images/Opening.png" />
       </div>
     </div>
   </div>
