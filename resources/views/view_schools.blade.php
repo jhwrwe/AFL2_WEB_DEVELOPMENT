@@ -6,7 +6,7 @@
 <br>
 <br>
 
-<body class="bg-gray-100 font-sans">
+<body class="bg-gray-100 font-sans p-4">
     <style>
         .detail-button {
             background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
