@@ -17,8 +17,6 @@ class SchoolsController extends Controller
     public function Show_Schools_info($id){
         $project = Schools::find($id);
             return view('Schools_info',[
-                'pagetitle' => 'project',
-                'maintitle' => 'project Data',
                 'project'=> $project,
                 "ActiveSchoolsInfo"=>  'md:dark:text-blue-500'
             ]);
