@@ -8,7 +8,6 @@
 
 <body class="bg-gray-100 font-sans">
     <style>
-        /* Custom CSS for the Detail button background gradient */
         .detail-button {
             background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
         }

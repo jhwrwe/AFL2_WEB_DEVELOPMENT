@@ -198,29 +198,4 @@
             <div :style="`max-height:${height}%`" class="h-full bg-green-400"></div>
         </div>
 
-        <div id="alpine-devtools" x-data="devtools()" x-show="alpines.length" x-init="start()">
-        </div>
-        <script>
-            function scrollHandler(element = null) {
-                return {
-                    height: 0,
-                    element: element,
-                    calculateHeight(position) {
-                        const distanceFromTop = this.element.offsetTop
-                        const contentHeight = this.element.clientHeight
-                        const visibleContent = contentHeight - window.innerHeight
-                        const start = Math.max(0, position - distanceFromTop)
-                        const percent = (start / visibleContent) * 100;
-                        requestAnimationFrame(() => {
-                            this.height = percent;
-                        });
-                    },
-                    init() {
-                        this.element = this.element || document.body;
-                        this.calculateHeight(window.scrollY);
-                    }
-                };
-            }
-        </script>
-
     </body>

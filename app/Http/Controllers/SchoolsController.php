@@ -10,8 +10,6 @@ class SchoolsController extends Controller
 {
     public function index(){
         return view('view_schools',[
-            "pagetitle" => "projek",
-        "maintitle" => "projek data",
         'projects' => Schools::all(),
         "ActiveSchoolsText"=>  "md:dark:text-blue-500"
         ]);
